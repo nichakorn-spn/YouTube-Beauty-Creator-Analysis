@@ -104,7 +104,7 @@ The dashboard supports interactive exploration of creator performance, engagemen
 ## Repository Structure
 
 ```
-ํYouTube-Beauty-Creator-Analysis/
+YouTube-Beauty-Creator-Analysis/
 
 ├── README.md
 │   └── Project overview, key findings, and business recommendations
