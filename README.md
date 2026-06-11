@@ -76,7 +76,7 @@ The dashboard operationalises the project's analytical outputs into a single dec
 
 The dashboard supports interactive exploration of creator performance, engagement quality, and trending behaviour.
 
-![Dashboard Preview](dashboard/Tableau_Dashboard.png)
+![Dashboard Preview](dashboard/Dashboard_Tableau.png)
 
 **Four components:**
 
