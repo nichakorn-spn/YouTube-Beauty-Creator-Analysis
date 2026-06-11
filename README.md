@@ -3,14 +3,14 @@
 
 ## Business Problem
 
-Beauty brands investing in YouTube influencer partnerships typically evaluate creators using view counts, subscriber counts or trending frequency. The assumption is that larger audiences produce better campaign outcomes. Findings are directional and based on historical data. See the notebook for methodology, assumptions and limitations.
+Beauty brands investing in YouTube influencer partnerships typically evaluate creators using reach (views), subscriber count or trending frequency. The assumption is that larger audiences produce better campaign outcomes. Findings are directional and based on historical data. See the notebook for methodology, assumptions and limitations.
 
-This project challenges that assumption. Audience size and audience engagement are not interchangeable metrics and prioritising one over the other can change which creators make the shortlist. For a brand where audience responsiveness, trust, and active participation drive campaign outcomes, optimising for views alone is likely leaving value on the table.
+This project challenges that assumption. Reach and audience engagement are not interchangeable metrics and prioritising one over the other can change which creators make the shortlist. For a brand where audience responsiveness, trust, and active participation drive campaign outcomes, optimising for views alone is likely leaving value on the table.
 
 
 ## Project Objective
 
-Identify which YouTube creators a beauty brand should prioritise for partnerships, using audience responsiveness as the primary selection criterion rather than raw view volume and demonstrate how that shift produces a different, more strategically valuable creator shortlist.
+Identify which YouTube creators a beauty brand should prioritise for partnerships, using audience responsiveness as the primary selection criterion rather than raw reach and demonstrate how that shift produces a different, more strategically valuable creator shortlist.
 
 
 ## Dataset
@@ -45,13 +45,13 @@ The analysis moves from platform-wide context to beauty-specific decision suppor
 **Reach and engagement are nearly uncorrelated.**
 Across trending videos, `engagement_score` shows close to zero correlation with raw view counts. A video with 10× more views does not reliably produce 10× more audience interaction.
 
-**Beauty content over-indexes on engagement rather than audience scale.**
+**Beauty content over-indexes on engagement, not reach.**
 Howto & Style sits mid-table on median views, ranking below Music and Entertainment. On median engagement score and like rate, it ranks near the top of all categories. Beauty audiences are active, not passive.
 
 **Engagement rate decays modestly as beauty channels scale.**
-Among beauty channels, higher total view volume is associated with a modest decline in average engagement rate. Larger channels do not consistently generate the strongest audience engagement.
+Among beauty channels, higher total reach is associated with a modest decline in average engagement rate. Larger channels do not consistently generate the strongest audience engagement.
 
-**A distinct group of hidden-gem creators sits above the engagement median while below the view median.**
+**A distinct group of hidden-gem creators sits above the engagement median while below the reach median.**
 These channels deliver audience responsiveness comparable to much larger partners. If partnership pricing is primarily reach-driven — which it typically is — these creators are systematically undervalued.
 
 **Viral momentum in beauty is front-loaded.**
@@ -64,7 +64,7 @@ Over 70% of trending beauty videos reach the trending page within two days of pu
 A shortlist built on subscriber count or total views will systematically exclude creators with the most responsive audiences. `engagement_score` is the more commercially relevant primary criterion for any campaign where audience interaction matters more than impression volume. The SQL queries in this project provide a reusable evaluation template.
 
 **2. Adopt a two-tier partnership strategy**
-- **Tier 1 (Awareness):** A small number of large beauty creators for brand awareness campaigns where impression volume is the primary objective
+- **Tier 1 (Reach):** A small number of large beauty creators for brand awareness campaigns where impression volume is the primary objective
 - **Tier 2 (Hidden Gems):** Mid-sized creators with above-median engagement and below-median reach. These creators may represent overlooked partnership opportunities, as their engagement performance appears stronger than their reach alone would indicate.
 **3 — Treat the 48-hour post-upload window as the critical activation moment**
 Beauty content reaches the trending page quickly, with most trending videos appearing within two days of publication. Campaign activities such as paid promotion, cross-channel sharing, and PR outreach should therefore be planned around this early visibility window. While the analysis does not establish a causal link between amplification and trending success, it suggests that audience traction is largely established during the first 48 hours. Videos demonstrating strong early momentum may be prioritised for additional campaign investment, rather than waiting for final performance outcomes.

@@ -1,0 +1,23 @@
+# Raw dataset
+USvideos.csv
+
+# Tableau intermediate CSV exports
+creator_dashboard.csv
+tableau_beauty_index.csv
+tableau_category_summary.csv
+tableau_creator_level.csv
+tableau_tier_summary.csv
+tableau_timing_summary.csv
+tableau_video_level.csv
+
+# Python / Jupyter
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# Virtual environment
+.venv/
+venv/
+
+# macOS
+.DS_Store
